@@ -55,7 +55,7 @@ namespace safety {
             
             std_msgs::UInt8 status; /*status của robot*/
     
-            std::unique_prt<safetyPLCStatus> statusPLC; /*Trạng thái PLC, con trỏ struct "safetyPLCStatus" */
+            std::unique_ptr<safetyPLCStatus> statusPLC; /*Trạng thái PLC, con trỏ struct "safetyPLCStatus" */
     
             std::thread readThread; /* Tạo Thread hoạt động song song với Main Thread đọc dữ liệu từ cổng RS232 */
     
